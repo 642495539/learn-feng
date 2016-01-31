@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>fcy</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+
+<body >
+<div id=id1 myname="haha" style="width:50px;height:50px;border:1px solid red;" onclick="fun1()"></div>
+<div id=id2 style="width:50px;height:50px;border:1px solid blue;" onclick="fun2()"></div>
+</div>
+
+<div id=id3>aaa</div>
+
+</body>
+
+<script>
+
+
+function fun1()
+{
+alert(this.id);
+alert(this.myname);
+
+}
+
+document.getElementById("id1").onclick=fun1;
+ <!--     
+ 为何id正常显示
+ myname显示undefined
+ -->
+
+
+function fun2(){}
+
+
+
+
+</script>
+
+</html>
+
